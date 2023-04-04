@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  chatally:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      MODEL_ENGINE: ${MODEL_ENGINE}
+      TELEGRAM_TOKEN: ${TELEGRAM_TOKEN}
+      CHATGPT_TOKEN: ${CHATGPT_TOKEN}
+      MAX_TOKEN: ${MAX_TOKEN:-50}
+      STOP: ${STOP:-null}
+      TEMPERATURE: ${TEMPERATURE:-0.7}
+      N: ${N:-1}
+    restart: always

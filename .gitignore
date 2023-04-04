@@ -1,0 +1,35 @@
+# Ignore Python cache files
+__pycache__/
+
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+
+# Ignore build files
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+venv/
+
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore private keys
+*.pem
+
+# Ignore dependency lock files
+pip-lock.txt
+
+# Ignore config files
+config/
+
+# Ignore testing files
+test/
+
+# Ignore coverage reports
+.coverage/
